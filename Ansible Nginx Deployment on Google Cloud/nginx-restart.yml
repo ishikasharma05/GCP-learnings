@@ -1,0 +1,7 @@
+#these file should be added inside the handlers folder 
+
+---
+- name: Nginx restart if any changes applied by installtion or configuration 
+  service:
+    name: nginx
+    status: restarted

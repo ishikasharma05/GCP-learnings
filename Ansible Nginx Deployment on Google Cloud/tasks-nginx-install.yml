@@ -1,0 +1,6 @@
+#you have to added these file in tasks folder 
+---
+- name: Install nginx
+  apt:
+   name: nginx
+   state: present

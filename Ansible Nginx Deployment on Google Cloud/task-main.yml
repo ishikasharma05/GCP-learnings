@@ -1,0 +1,10 @@
+#you have to update your main.yml file of the tasks folder 
+
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for webserver-deployment
+- name: Install nginx
+  import_tasks: nginx-install.yml 
+
+- name: Configuration Nginx
+  import_tasks: nginx-configuration.yml

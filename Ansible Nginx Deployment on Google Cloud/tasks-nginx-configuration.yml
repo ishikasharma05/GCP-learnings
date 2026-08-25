@@ -1,0 +1,10 @@
+#you have to added these file in tasks folder 
+
+---
+- name: Nginx configuration file for all the websever deployment
+  ansible.builtin.copy:
+    src: ../files/nginx.conf
+    dest: /tmp/nginx.conf
+   # owner: dev
+   # group: ubuntu
+   # mode: '0644's
